@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
-export const BASE_URL="http://localhost:8080"
+export const BASE_URL="https://connectifyy-974y.onrender.com"
 
 export const clientServer=axios.create({
-    baseURL:"http://localhost:8080"
+    baseURL:BASE_URL,
 })
