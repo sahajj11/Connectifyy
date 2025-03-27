@@ -1,0 +1,27 @@
+
+.userCard{
+    display: flex;
+    gap:1.2rem;
+    width: 100%;
+    padding: 1.3rem;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 12px 12px 12px 0px rgba(0,0,0,0.1);
+}
+
+.profilePicture >img{
+    width: 6.5rem;
+    border-radius: 50%;
+}
+
+.connectBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    outline: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(3,93,183,0.905);
+
+}

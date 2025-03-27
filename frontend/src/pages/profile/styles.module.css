@@ -1,0 +1,217 @@
+.container{
+    padding:1.2rem;
+    /* background: rgb(243, 240, 240); */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+/* 12 */
+.backDropContainer{
+    width:100%;
+    height: 30vh;
+    background-size: cover;
+    background: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius:20px;
+}
+
+.backDropContainer img{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left:8%;
+    text-align: center;
+}
+
+.backDrop_overlay{
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left:8%;
+    text-align: center;
+    transition: all 0.4s;
+    z-index: 4;
+    cursor: pointer;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.0;
+   
+
+}
+
+.backDrop_overlay:hover{
+    background: black;
+    opacity: 0.5;
+}
+
+.profileContainer_details{
+    padding-top: 4rem;
+}
+
+.profileContainer_details textarea{
+    outline: none;
+    border: none;
+    padding-inline:9px;
+    padding-block:9px;
+    font-family: "Poppins";
+    font-size:1.1rem;
+}
+
+.profileContainer_details input{
+    outline: none;
+    border-style: none;
+    padding-inline: 9px;
+    padding-block: 9px;
+    width: fit-content;
+}
+
+.nameEdit{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap:1.4rem;
+}
+
+.card_profileContainer{
+    display: flex;
+}
+
+.card_profileContainer>img{
+    width: 3.4rem;
+    height: auto;
+    object-fit: cover;
+    height: 3.4rem;
+}
+
+
+.connectBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    outline: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(3,93,183,0.905);
+    width: fit-content;
+}
+
+.updateProfileBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    outline: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(3,93,183,0.905);
+    width: fit-content;
+    margin-top: 1.2rem;
+
+}
+
+.connectedButton{
+
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    outline: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(3,93,183,0.905);
+}
+
+.workHistoryContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;    
+    width: 100%;
+    padding-top:1.4rem;
+}
+
+.workHistoryCard{
+    padding-block: 1rem;
+    padding-inline: 2.5rem;
+    border-radius: 10px;
+    min-width: fit-content;
+    box-shadow: 10px 10px 15px rgba(173,173,173);
+   
+}
+
+.addWorkButton{
+    border-style: dotted;
+    padding-inline: 1.2rem;
+    background: white;
+    border:1px dotted grey ;
+    cursor: pointer;
+    padding-block:1.2rem ;
+
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left:0;
+    top:0;
+    z-index:2;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    align-items: center;
+}
+
+.allCommentsContainer{
+    width: 40vw;
+    height: fit-content;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+
+}
+
+.inputField{
+    padding-inline: 1.3rem;
+    padding-block: 0.8rem;
+    outline: none;
+    border: 1px solid silver;
+    border-radius:10px ;
+    width: 100%;
+}
+
+.connectBtn{
+    padding-inline: 0.8rem;
+    padding-block: 0.3rem;
+    outline: none;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(3,93,183,0.905);
+}
+
+@media only screen and (max-width:600px){
+    .res{
+        flex-direction: column;
+    }
+}
